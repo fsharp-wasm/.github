@@ -36,5 +36,5 @@ Open an issue before large changes.
 ## License
 
 By contributing you agree that your contribution is licensed under the licence of the repository it goes into (see that
-repository's `LICENSE` file): [Apache License 2.0](LICENSE) for the repositories that have no licence of their own yet,
-including this one, MIT for the ones that already carry it.
+repository's `LICENSE` file): the [Apache License 2.0](LICENSE) everywhere, except in the two forks the backend is built on,
+Fable and the F# compiler, which keep their MIT License.
