@@ -15,7 +15,7 @@ and builds the libraries, tools and hosts around it. It is **experimental**: thi
   mean 1.45–1.58× without the one kernel the compiler fuses into a single loop; on JavaScriptCore 1.03×. Part of the V8 result is V8's inliner.
   Every number, the method and what is *not* measured: [benchmarks](https://fsharp-wasm.github.io/benchmarks/).
 - **One backend module on six platforms**: the same F# program answers identically on Node, Bun, Deno, Cloudflare Workers (with a Durable Object),
-  Vercel and Netlify in our test matrix. It is not deployed to those platforms yet — [fsharp-wasm-backend](https://github.com/fsharp-wasm/fsharp-wasm-backend) says what is a runtime and what an emulation.
+  Vercel and Netlify in our test matrix. It is not deployed to those platforms yet — [fsharp-wasm-edge](https://github.com/fsharp-wasm/fsharp-wasm-edge) says what is a runtime and what an emulation.
 
 ## 🧱 Projects
 
@@ -28,7 +28,7 @@ and builds the libraries, tools and hosts around it. It is **experimental**: thi
 | **[fsharp-glyph-aura](https://github.com/fsharp-wasm/fsharp-glyph-aura)** | OpenType shaping and SDF text layout, zero-alloc |
 | **[fsharp-wasm-ide](https://github.com/fsharp-wasm/fsharp-wasm-ide)** | Tools written in F#: the visual widget editor first |
 | **[fsharp-wasm-backend](https://github.com/fsharp-wasm/fsharp-wasm-backend)** | Backend modules in F# (the *Ghost Todo* demo) and the .NET reference libraries |
-| **[fsharp-wasm-edge](https://github.com/fsharp-wasm/fsharp-wasm-edge)** | *New, just started.* The host that will run those modules on Cloudflare, Vercel, Netlify, Deno, Bun and Node — today that code lives in the backend repository |
+| **[fsharp-wasm-edge](https://github.com/fsharp-wasm/fsharp-wasm-edge)** | The host that runs those modules on Cloudflare, Vercel, Netlify, Deno, Bun and Node: the core, the adapters, the platform matrix and the deploy workflow. *New; not deployed yet* |
 | **[fsharp-wasmecto](https://github.com/fsharp-wasm/fsharp-wasmecto)** | An Expecto-style test framework compiled to WasmGC |
 | [fsharp](https://github.com/fsharp-wasm/fsharp) · [fable](https://github.com/fsharp-wasm/fable) | Forks (MIT) the compiler builds on |
 
