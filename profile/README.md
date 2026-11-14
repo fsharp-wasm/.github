@@ -9,13 +9,23 @@ and builds the libraries, tools and hosts around it. It is **experimental**: thi
 
 ## ✅ What works today
 
-- **A compiler** from F# to WasmGC (a modern WAT/binary back end behind a forked [Fable](https://github.com/fsharp-wasm/fable) front end).
+- **A compiler** from F# to WasmGC (a WAT printer and a binary encoder behind a forked [Fable](https://github.com/fsharp-wasm/fable) front end), with 656 regression tests and a differential run against .NET of 183 012 calls without a disagreement.
 - **Small modules**: 12–153 KB raw, 4–45 KB with brotli, for whole demo applications.
 - **Speed, measured** (one 4-vCPU machine, 13 kernels, F# against hand-written JavaScript): on V8 the F# module is faster in 9–11 of the 13, geometric
   mean 1.45–1.58× without the one kernel the compiler fuses into a single loop; on JavaScriptCore 1.03×. Part of the V8 result is V8's inliner.
   Every number, the method and what is *not* measured: [benchmarks](https://fsharp-wasm.github.io/benchmarks/).
 - **One backend module on six platforms**: the same F# program answers identically on Node, Bun, Deno, Cloudflare Workers (with a Durable Object),
   Vercel and Netlify in our test matrix. It is not deployed to those platforms yet — [fsharp-wasm-edge](https://github.com/fsharp-wasm/fsharp-wasm-edge) says what is a runtime and what an emulation.
+
+## 🔎 See it, run it, check it
+
+| | |
+|---|---|
+| **[Live demos](https://fsharp-wasm.github.io/demos)** | Twelve demos that run in your browser: a counter, a todo list, a Web Worker actor, a canvas scene gallery, a widget editor, a benchmark |
+| **[Examples](https://fsharp-wasm.github.io/examples)** | Code to read and run: classic algorithms, component linking, a server module, graphics, text shaping |
+| **[Benchmarks](https://fsharp-wasm.github.io/benchmarks)** | Thirteen kernels against JavaScript, the size of every module, load times on five networks — with the method and what is not measured |
+| **[Tests](https://fsharp-wasm.github.io/tests)** | Every suite of every repository: what it checks, how many tests, how to run it, whether CI runs it |
+| **[Backend on the edge](https://fsharp-wasm.github.io/backend)** | The same F# module on eight test targets, and the honest status: not deployed yet |
 
 ## 🧱 Projects
 
