@@ -43,6 +43,11 @@ Issues labelled `good first issue` are the places to start.
 
 The forks (`fsharp`, `Fable`) keep `main` as a mirror of upstream and `develop` as our branch; changes that belong upstream go there as a pull request.
 
+## If you cloned before 15 November 2026
+
+We rewrote the history of every repository that day (the same commits, the same trees, with the author's name on all of them), so every commit has a new hash.
+A clone from before then does not fast-forward: clone again, and rebase your branches onto the new `develop`.
+
 ## Licence
 
 By contributing you agree that your contribution is licensed under the licence of the repository it goes into (see that repository's `LICENSE` file): the
