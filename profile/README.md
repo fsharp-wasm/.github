@@ -52,10 +52,14 @@ Planned, not done — we list what exists and what is intended apart:
   Not everything can be WebAssembly drawing pixels; what people read and operate has to be accessible.
 - Less .NET, more of our own libraries: independence from what the platform happens to ship.
 
+## 💛 Sponsor the organisation
+
+The work across all of these repositories is supported through [GitHub Sponsors: fsharp-wasm](https://github.com/sponsors/fsharp-wasm).
+
 ## 🤝 Join in
 
 We are early, so the work you do shapes the direction. Good places to start: a failing program (an
 [issue](https://github.com/fsharp-wasm/fsharp-wasm/issues) with the F# source is the best bug report), a benchmark we should add, a platform we should
-run on, documentation. Questions and ideas are welcome as issues too.
+run on, documentation. Questions and ideas are welcome in discussions and as issues; [CONTRIBUTING](https://github.com/fsharp-wasm/.github/blob/main/CONTRIBUTING.md) says how.
 
 Everything we wrote is Apache-2.0 (the two forks stay MIT).
