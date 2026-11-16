@@ -9,7 +9,7 @@ and builds the libraries, tools and hosts around it. It is **experimental**: thi
 
 ## ✅ What works today
 
-- **A compiler** from F# to WasmGC (a WAT printer and a binary encoder behind a forked [Fable](https://github.com/fsharp-wasm/fable) front end), with 656 regression tests and a differential run against .NET of 183 012 calls without a disagreement.
+- **A compiler** from F# to WasmGC (a WAT printer and a binary encoder behind a forked [Fable](https://github.com/fsharp-wasm/fable) front end), with 675 regression tests and a differential run against .NET of 183 012 calls without a disagreement.
 - **Small modules**: 12–153 KB raw, 4–45 KB with brotli, for whole demo applications.
 - **Speed, measured** (one 4-vCPU machine, 13 kernels, F# against hand-written JavaScript): on V8 the F# module is faster in 9–11 of the 13, geometric
   mean 1.45–1.58× without the one kernel the compiler fuses into a single loop; on JavaScriptCore 1.03×. Part of the V8 result is V8's inliner.
