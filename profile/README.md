@@ -39,6 +39,7 @@ and builds the libraries, tools and hosts around it. It is **experimental**: thi
 | **[fsharp-wasm-ide](https://github.com/fsharp-wasm/fsharp-wasm-ide)** | Tools written in F#: the visual widget editor first |
 | **[fsharp-wasm-backend](https://github.com/fsharp-wasm/fsharp-wasm-backend)** | Backend modules in F# (the *Ghost Todo* demo) and the .NET reference libraries |
 | **[fsharp-wasm-edge](https://github.com/fsharp-wasm/fsharp-wasm-edge)** | The host that runs those modules on Cloudflare, Vercel, Netlify, Deno, Bun and Node: the core, the adapters, the platform matrix and the deploy workflow. *New; not deployed yet* |
+| **[fsharp-wasm-newsletter](https://github.com/fsharp-wasm/fsharp-wasm-newsletter)** | A newsletter designer in F#: blocks to HTML email, web version and plain text, Bootstrap 5.3 by default and configurable. *New; the email is not yet tested in real mail clients* |
 | **[fsharp-wasmecto](https://github.com/fsharp-wasm/fsharp-wasmecto)** | An Expecto-style test framework compiled to WasmGC |
 | [fsharp](https://github.com/fsharp-wasm/fsharp) · [fable](https://github.com/fsharp-wasm/fable) | Forks (MIT) the compiler builds on |
 

@@ -4,7 +4,7 @@
 set -euo pipefail
 org=fsharp-wasm
 own=(fsharp-wasm fsharp-wasm-core fsharp-wasm-runtime fsharp-wasm-graphics fsharp-glyph-aura fsharp-wasm-ide
-     fsharp-wasm-backend fsharp-wasm-edge fsharp-wasmecto fsharp-wasm.github.io .github)
+     fsharp-wasm-backend fsharp-wasm-edge fsharp-wasm-newsletter fsharp-wasmecto fsharp-wasm.github.io .github)
 forks=(fsharp Fable)
 
 # 1. default branches: main for our own repositories, develop for the two forks (main there mirrors upstream)

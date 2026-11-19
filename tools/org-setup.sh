@@ -23,6 +23,7 @@ repos=(
   "fsharp-wasm-ide|Tools written in F# for F# on WebAssembly GC: the visual widget editor first.|$site/demos|fsharp,webassembly,wasmgc,editor,ui"
   "fsharp-wasm-backend|Backend modules in F# compiled to WebAssembly GC (the Ghost Todo demo) and the .NET reference libraries.|$site/backend|fsharp,webassembly,wasmgc,backend,edge"
   "fsharp-wasm-edge|The host that runs WebAssembly GC backend modules on Cloudflare, Vercel, Netlify, Deno, Bun and Node.|$site/backend|fsharp,webassembly,wasmgc,edge,cloudflare-workers,deno,bun"
+  "fsharp-wasm-newsletter|A newsletter designer in F# on WebAssembly GC: HTML email, web version and plain text; Bootstrap 5.3 by default, configurable.|$site/demos|fsharp,webassembly,wasmgc,newsletter,email,bootstrap"
   "fsharp-wasmecto|An Expecto-style test framework compiled to WebAssembly GC.|$site|fsharp,testing,webassembly,wasmgc,expecto"
   "fsharp|||fsharp,compiler,fork"
   "Fable|||fsharp,fable,compiler,fork"
