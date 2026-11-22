@@ -45,12 +45,15 @@ and builds the libraries, tools and hosts around it. It is **experimental**: thi
 
 ## 🧭 Where it is going
 
-Planned, not done — we list what exists and what is intended apart:
+Planned, not done — we list what exists and what is intended apart. The order and the reasons are in the [roadmap](https://fsharp-wasm.github.io/docs/roadmap/), and every project, with what works today, is on the [projects page](https://fsharp-wasm.github.io/projects/).
 
-- **Backend modules as WebAssembly components** (WIT worlds), linked by a small host on every edge platform.
-- **A typed F# DSL** for that host, usable from [Fable](https://fable.io) projects.
-- **A GUI framework that renders real, accessible HTML** — semantic elements, keyboard and screen-reader support — beside the canvas graphics.
-  Not everything can be WebAssembly drawing pixels; what people read and operate has to be accessible.
+- **Speed that keeps the writing pleasant**: builders and small DSLs stay, and the compiler takes their cost away. A bulk path for strings across the host boundary is done (measured: the state of 5 000 todos 20.6 ms to 6.2 ms on Node); the compiled code for long strings and the builders are next.
+- **A pre-compiler at build time** for the scene graph and for GlyphAura, so that a program carries only the scene elements, widgets and glyph data it uses.
+- **Editors that are a pleasure to use**: the widget editor and the newsletter designer.
+- **A spreadsheet grid with formulas** ([fsharp-wasm-accounting](https://github.com/fsharp-wasm/fsharp-wasm-accounting), a repository without code so far): rows and columns that fold into total lines, and the tree of a cell in a tab of its own.
+- **A data science library** in the manner of NumPy and Polars, and **WIT with Rust libraries**, so that what exists in Rust is not written twice.
+- **Real deployments** of the Ghost Todo on Cloudflare, Vercel and Netlify.
+- **A GUI layer that renders real, accessible HTML** — semantic elements, keyboard and screen-reader support — beside the canvas graphics.
 - Less .NET, more of our own libraries: independence from what the platform happens to ship.
 
 ## 💛 Sponsor the organisation
