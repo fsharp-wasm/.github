@@ -13,6 +13,8 @@ Thank you for looking. fsharp-wasm is an open-source organisation that compiles 
 | [fsharp-wasm-edge](https://github.com/fsharp-wasm/fsharp-wasm-edge) | the host for Cloudflare, Vercel, Netlify, Deno, Bun and Node |
 | [fsharp-wasm-backend](https://github.com/fsharp-wasm/fsharp-wasm-backend) | server modules in F# and the .NET reference libraries |
 | [fsharp-wasm-graphics](https://github.com/fsharp-wasm/fsharp-wasm-graphics), [fsharp-glyph-aura](https://github.com/fsharp-wasm/fsharp-glyph-aura), [fsharp-wasm-ide](https://github.com/fsharp-wasm/fsharp-wasm-ide) | graphics, text shaping, the widget editor |
+| [fsharp-wasm-newsletter](https://github.com/fsharp-wasm/fsharp-wasm-newsletter), [fsharp-wasm-accounting](https://github.com/fsharp-wasm/fsharp-wasm-accounting), [fsharp-wasm-sci](https://github.com/fsharp-wasm/fsharp-wasm-sci) | applications and libraries on the stack: a newsletter designer, an accounting grid, scientific computing (planned) |
+| [fsharp-wasm-embedded](https://github.com/fsharp-wasm/fsharp-wasm-embedded), [fsharp-wasm-mobile](https://github.com/fsharp-wasm/fsharp-wasm-mobile) | the universal shell (desktop, mobile) and the device APIs (planned; a device probe exists) |
 | [fsharp-wasmecto](https://github.com/fsharp-wasm/fsharp-wasmecto) | an Expecto-style test framework compiled to WebAssembly |
 | [fsharp-wasm.github.io](https://github.com/fsharp-wasm/fsharp-wasm.github.io) | the website |
 | [fsharp](https://github.com/fsharp-wasm/fsharp), [Fable](https://github.com/fsharp-wasm/Fable) | forks (MIT); read their `AGENTS.md` before touching a branch |
@@ -27,6 +29,7 @@ Thank you for looking. fsharp-wasm is an open-source organisation that compiles 
   each is a good first task.
 - **Tests that run everywhere.** Two compiler suites do not run at present; browser tests run in Chromium only. Firefox and Safari coverage is wanted.
 - **Benchmarks and comparisons** — a kernel we should add, the same programs in Fable → JavaScript, Blazor or Kotlin/Wasm.
+- **A device** we should run on: open the probe of [fsharp-wasm-embedded](https://github.com/fsharp-wasm/fsharp-wasm-embedded/tree/develop/probe) on your phone, tablet or television and send the report (a [device report](https://github.com/fsharp-wasm/fsharp-wasm-embedded/issues/new?template=device_report.yml); no code needed).
 - **A platform** we should run on, or a real deployment of the host.
 - **Accessibility.** A GUI layer that renders semantic HTML, and automated accessibility checks.
 - **Documentation** — a page that confused you is a page to fix.
