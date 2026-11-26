@@ -5,6 +5,8 @@ and builds the libraries, tools and hosts around it. It is **experimental**: thi
 
 👉 **[fsharp-wasm.github.io](https://fsharp-wasm.github.io)** — the site, the live demos and the [benchmarks](https://fsharp-wasm.github.io/benchmarks/)
 
+▶ **[WasmOS](https://fsharp-wasm.github.io/fsharp-wasm-runtime/demos/wasmos/)** — one F# program that is Windows, macOS, Android or a Linux desktop. Open it, drag the windows, switch the system. · 💛 **[Sponsor](https://github.com/sponsors/fsharp-wasm)**
+
 ---
 
 ## ✅ What works today
@@ -21,7 +23,7 @@ and builds the libraries, tools and hosts around it. It is **experimental**: thi
 
 | | |
 |---|---|
-| **[Live demos](https://fsharp-wasm.github.io/demos)** | Demos that run in your browser: a counter, a todo list, a Web Worker actor, a canvas scene gallery, a widget editor, a benchmark |
+| **[Live demos](https://fsharp-wasm.github.io/demos)** | Demos that run in your browser: WasmOS (one F# program, four systems), a widget editor, charts of ten million samples, an accounting grid, a counter, a todo list, a Web Worker actor, a canvas scene gallery, a benchmark |
 | **[Examples](https://fsharp-wasm.github.io/examples)** | Code to read and run: classic algorithms, component linking, a server module, graphics, text shaping |
 | **[Benchmarks](https://fsharp-wasm.github.io/benchmarks)** | Thirteen kernels against JavaScript, the size of every module, load times on five networks — with the method and what is not measured |
 | **[Tests](https://fsharp-wasm.github.io/tests)** | Every suite of every repository: what it checks, how many tests, how to run it, whether CI runs it |
@@ -54,7 +56,7 @@ Planned, not done — we list what exists and what is intended apart. The order 
 - **Speed that keeps the writing pleasant**: builders and small DSLs stay, and the compiler takes their cost away. A bulk path for strings across the host boundary is done (measured: the state of 5 000 todos 20.6 ms to 6.2 ms on Node); the compiled code for long strings and the builders are next.
 - **A pre-compiler at build time** for the scene graph and for GlyphAura, so that a program carries only the scene elements, widgets and glyph data it uses.
 - **Editors that are a pleasure to use**: the widget editor and the newsletter designer.
-- **A spreadsheet grid with formulas** ([fsharp-wasm-accounting](https://github.com/fsharp-wasm/fsharp-wasm-accounting)): the first version runs as a demo (a million journal lines turned in 4 to 5 ms, measured 2026-11-24 in a headless Chromium); formulas over measures and the tree of a chart of accounts come next.
+- **A spreadsheet grid with formulas** ([fsharp-wasm-accounting](https://github.com/fsharp-wasm/fsharp-wasm-accounting)): a million journal lines as a pivot table that folds to its totals and turns (4 to 5 ms, measured 2026-11-24 in a headless Chromium), and a budget that is written with numbers and formulas (`=Actual*1.1`, `=A1+B1`); every step is a patch of a data graph, on a tape that the History tab shows, and can be undone. The editing is checked in Chromium (2026-11-26).
 - **Apps on phones and desktops**: a shell ([fsharp-wasm-embedded](https://github.com/fsharp-wasm/fsharp-wasm-embedded)) and the device APIs ([fsharp-wasm-mobile](https://github.com/fsharp-wasm/fsharp-wasm-mobile)); television later. The first question is which web views can run our modules at all, and the probe in the shell's repository asks it: [send a device report](https://github.com/fsharp-wasm/fsharp-wasm-embedded/issues/new?template=device_report.yml).
 - **A data science library** in the manner of NumPy and Polars, and **WIT with Rust libraries**, so that what exists in Rust is not written twice.
 - **Real deployments** of the Ghost Todo on Cloudflare, Vercel and Netlify.
